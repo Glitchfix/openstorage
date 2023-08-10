@@ -3667,8 +3667,8 @@ func TestOsdCsiServer_DeleteCloudSnapshot(t *testing.T) {
 			"fail snapshot delete",
 			"not-found-error",
 			"valid-cred",
-			nil,
-			true,
+			&csi.DeleteSnapshotResponse{},
+			false,
 		},
 		{
 			"fail snapshot delete",
